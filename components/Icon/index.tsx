@@ -1,8 +1,9 @@
 import { EnvelopeSimple, InstagramLogo, List } from 'phosphor-react-native';
 import { IconColor, IconProps, IconSize, IconVariant } from './types';
 import { Theme } from '../../styles';
+import { memo } from 'react';
 
-export function Icon({ variant, color = 'black', size = 'normal' }: IconProps) {
+function Icon({ variant, color = 'black', size = 'normal' }: IconProps) {
   const colors: Record<IconColor, string> = {
     black: Theme.colors.black,
     'dark-blue': Theme.colors.text,
@@ -22,3 +23,5 @@ export function Icon({ variant, color = 'black', size = 'normal' }: IconProps) {
 
   return icons[variant];
 }
+
+export default memo(Icon);
