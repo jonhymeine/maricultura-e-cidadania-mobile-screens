@@ -3,20 +3,35 @@ import { Theme } from '../global';
 
 export const footerStyles = StyleSheet.create({
   container: {
+    flexDirection: 'row',
+
+    height: 28,
+
     justifyContent: 'space-between',
     alignItems: 'center',
-    flexDirection: 'row',
-    height: 28,
+
     paddingHorizontal: 10,
+
     backgroundColor: Theme.colors.primary,
     borderTopColor: Theme.colors.black,
-    borderBottomWidth: 1,
+    borderTopWidth: 1,
   },
+
+  content: {
+    flexDirection: 'row',
+
+    alignItems: 'center',
+
+    gap: 4,
+  },
+
   text: {
-    fontSize: 20,
+    fontSize: 14,
     fontFamily: Theme.fonts.regular,
+
     color: Theme.colors.text,
   },
+
   image: {
     width: 32,
     height: 32,

@@ -7,7 +7,7 @@ import Icon from '../Icon';
 function Header() {
   return (
     <View style={headerStyles.container}>
-      <Image source={{ uri: UNIVALI_LOGO }} style={headerStyles.image} />
+      {/* <Image source={{ uri: UNIVALI_LOGO }} style={headerStyles.image} /> */}
 
       <Text style={headerStyles.text}>Maricultura e Cidadania</Text>
 
