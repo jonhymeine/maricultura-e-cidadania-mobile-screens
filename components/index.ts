@@ -1,3 +1,4 @@
 import Icon from './Icon';
+import SocialButton from './SocialButton';
 
-export { Icon };
+export { Icon, SocialButton };
