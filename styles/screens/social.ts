@@ -1,20 +1,21 @@
-import { StyleSheet } from 'react-native';
-import { Theme } from '../global';
+import { StyleSheet } from "react-native";
+import { Theme } from "../global";
 
 export const socialStyles = StyleSheet.create({
   container: {
     flex: 1,
 
-    padding: 52,
+    paddingVertical: 52,
+    paddingHorizontal: 32,
     gap: 96,
 
     backgroundColor: Theme.colors.background,
   },
 
   content: {
-    flexDirection: 'column',
+    flexDirection: "column",
 
-    width: '100%',
+    width: "100%",
 
     gap: 20,
   },

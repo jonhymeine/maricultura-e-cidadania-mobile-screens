@@ -1,12 +1,13 @@
 import 'react-native-reanimated';
 
+import React from 'react';
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 import { Inter_400Regular, Inter_700Bold } from '@expo-google-fonts/inter';
-import { rootStyles, Theme } from '@/styles';
+import { rootStyles, Theme } from './../styles';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 SplashScreen.preventAutoHideAsync();

@@ -1,7 +1,7 @@
+import React, { memo } from 'react';
 import { EnvelopeSimple, InstagramLogo, List } from 'phosphor-react-native';
 import { IconColor, IconProps, IconSize, IconVariant } from './types';
 import { Theme } from '../../styles';
-import { memo } from 'react';
 
 function Icon({ variant, color = 'black', size = 'normal' }: IconProps) {
   const colors: Record<IconColor, string> = {
