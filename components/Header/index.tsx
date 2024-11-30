@@ -1,4 +1,5 @@
 import React, { memo } from 'react';
+import { Link } from 'expo-router';
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 import { UNIVALI_LOGO } from '../../config';
 import { headerStyles } from '../../styles';
@@ -11,9 +12,11 @@ function Header() {
 
       <Text style={headerStyles.text}>Maricultura e Cidadania</Text>
 
-      <TouchableOpacity activeOpacity={0.8}>
-        <Icon variant='list' color='dark-blue' size='large' />
-      </TouchableOpacity>
+      <Link href={'/social'} asChild>
+        <TouchableOpacity activeOpacity={0.8}>
+          <Icon variant='list' color='dark-blue' size='large' />
+        </TouchableOpacity>
+      </Link>
     </View>
   );
 }
