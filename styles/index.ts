@@ -1,2 +1,2 @@
-export * from './Theme'
-export * from './screens'
+export * from './global';
+export * from './screens';
