@@ -1,17 +1,17 @@
-import { useFonts } from 'expo-font'
-import { Stack } from 'expo-router'
-import * as SplashScreen from 'expo-splash-screen'
-import { StatusBar } from 'expo-status-bar'
-import { useEffect } from 'react'
-import 'react-native-reanimated'
-import { Inter_400Regular, Inter_700Bold } from '@expo-google-fonts/inter'
+import { useFonts } from "expo-font";
+import { Stack } from "expo-router";
+import * as SplashScreen from "expo-splash-screen";
+import { StatusBar } from "expo-status-bar";
+import { useEffect } from "react";
+import "react-native-reanimated";
+import { Inter_400Regular, Inter_700Bold } from "@expo-google-fonts/inter";
 
-SplashScreen.preventAutoHideAsync()
+SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded] = useFonts({
     Inter_400Regular,
-    Inter_700Bold
+    Inter_700Bold,
   });
 
   useEffect(() => {
@@ -27,7 +27,7 @@ export default function RootLayout() {
   return (
     <>
       <StatusBar style="dark" translucent networkActivityIndicatorVisible />
-      <Stack initialRouteName='home'>
+      <Stack initialRouteName="home">
         <Stack.Screen name="home" options={{ headerShown: false }} />
       </Stack>
     </>
