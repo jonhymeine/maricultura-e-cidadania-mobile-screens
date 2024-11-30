@@ -8,7 +8,9 @@ function Header() {
   return (
     <View style={headerStyles.container}>
       <Image source={{ uri: UNIVALI_LOGO }} style={headerStyles.image} />
+
       <Text style={headerStyles.text}>Maricultura e Cidadania</Text>
+
       <TouchableOpacity activeOpacity={0.8}>
         <Icon variant='list' color='dark-blue' size='large' />
       </TouchableOpacity>

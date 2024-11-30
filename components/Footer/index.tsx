@@ -7,11 +7,14 @@ function Footer() {
   return (
     <View style={footerStyles.container}>
       <TouchableOpacity activeOpacity={0.8}>
-        <Icon variant='instagram' color='black' size='normal' />
+        <Icon variant='instagram' />
+
         <Text style={footerStyles.text}>@maricultura.univali</Text>
       </TouchableOpacity>
+
       <TouchableOpacity activeOpacity={0.8}>
-        <Icon variant='instagram' color='black' size='normal' />
+        <Icon variant='instagram' />
+
         <Text style={footerStyles.text}>@gibamanzoni</Text>
       </TouchableOpacity>
     </View>

@@ -1,11 +1,11 @@
-import { StyleSheet } from "react-native";
-import { Theme } from "../Theme";
+import { StyleSheet } from 'react-native';
+import { Theme } from '../global';
 
 export const headerStyles = StyleSheet.create({
   container: {
-    justifyContent: "space-between",
-    alignItems: "center",
-    flexDirection: "row",
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    flexDirection: 'row',
     height: 44,
     paddingHorizontal: 10,
     backgroundColor: Theme.colors.primary,
