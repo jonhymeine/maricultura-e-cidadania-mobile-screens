@@ -17,6 +17,14 @@ export const headerStyles = StyleSheet.create({
     borderBottomWidth: 1,
   },
 
+  presentation: {
+    flexDirection: 'row',
+
+    alignItems: 'center',
+
+    gap: 8,
+  },
+
   text: {
     fontSize: 20,
     fontFamily: Theme.fonts.regular,
