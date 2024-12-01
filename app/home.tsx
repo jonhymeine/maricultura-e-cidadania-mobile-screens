@@ -1,5 +1,5 @@
 import React, { View } from 'react-native';
-import { Header, Footer } from './../components';
+import { Header, Footer, Carousel } from './../components';
 import { homeStyles } from '../styles';
 
 export default function Home() {
@@ -7,7 +7,9 @@ export default function Home() {
     <>
       <Header />
 
-      <View style={homeStyles.container}></View>
+      <View style={homeStyles.container}>
+        <Carousel />
+      </View>
 
       <Footer />
     </>
