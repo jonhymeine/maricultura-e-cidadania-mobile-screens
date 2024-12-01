@@ -24,4 +24,8 @@ export const homeStyles = StyleSheet.create({
 
     color: Theme.colors.black,
   },
+
+  list: {
+    gap: 16,
+  },
 });

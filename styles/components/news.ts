@@ -4,36 +4,45 @@ import { Theme } from '../global';
 export const newsStyles = StyleSheet.create({
   container: {
     flexDirection: 'row',
+
     width: '100%',
     justifyContent: 'space-between',
     alignItems: 'center',
-    gap: 12,
-    backgroundColor: Theme.colors.primary,
-    borderRadius: 20,
+
     padding: 16,
+    gap: 12,
+
+    borderRadius: 16,
+
+    backgroundColor: Theme.colors.primary,
   },
 
-  textContainer:{
+  textContainer: {
     flex: 1,
+
     gap: 8,
   },
+
   text: {
     fontSize: 16,
     fontFamily: Theme.fonts.regular,
-    marginBottom: 4,
+    lineHeight: 20,
+
     color: Theme.colors.text,
-    overflow: 'hidden',
   },
 
   image: {
     width: '40%',
     height: '100%',
-    borderRadius: 10,
+
+    borderRadius: 12,
   },
 
   date: {
-    fontSize: 14,
-    fontWeight: 'bold',
+    fontSize: 16,
+    fontFamily: Theme.fonts.bold,
+    lineHeight: 20,
+
     color: Theme.colors.text,
-  }
+  },
 });
