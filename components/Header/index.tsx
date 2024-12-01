@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 import { Link } from 'expo-router';
-import { UNIVALI_LOGO } from '../../config';
+import { LOGO } from '../../config';
 import { headerStyles } from '../../styles';
 import Icon from '../Icon';
 
@@ -11,7 +11,7 @@ function Header() {
       <View style={headerStyles.presentation}>
         <Link href={'/home'} asChild>
           <TouchableOpacity activeOpacity={0.8}>
-            <Image source={UNIVALI_LOGO} style={headerStyles.image} />
+            <Image source={LOGO} style={headerStyles.image} />
           </TouchableOpacity>
         </Link>
 
