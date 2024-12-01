@@ -6,4 +6,4 @@ import Icon from './Icon';
 import SocialButton from './SocialButton';
 import News from './News';
 
-export { Carousel, Dot, Footer, Header, Icon, SocialButton };
+export { Carousel, Dot, Footer, Header, Icon, News, SocialButton };
