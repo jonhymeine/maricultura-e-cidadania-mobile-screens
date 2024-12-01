@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import { Image, Text, TouchableOpacity, View } from 'react-native';
+import { Image, ImageSourcePropType, Text, TouchableOpacity, View } from 'react-native';
 import { Link } from 'expo-router';
 import { LOGO } from '../../config';
 import { headerStyles } from '../../styles';
@@ -11,7 +11,7 @@ function Header() {
       <View style={headerStyles.presentation}>
         <Link href={'/home'} asChild>
           <TouchableOpacity activeOpacity={0.8}>
-            <Image source={LOGO} style={headerStyles.image} />
+            <Image source={LOGO as ImageSourcePropType} style={headerStyles.image} />
           </TouchableOpacity>
         </Link>
 
